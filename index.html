@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>我的简历</title>
+<style>
+	/*box-sizing 属性允许您以特定的方式定义匹配某个区域的特定元素。
+	例如，假如您需要并排放置两个带边框的框，可通过将 box-sizing 
+	设置为 "border-box"。这可令浏览器呈现出带有指定宽度和高度的框，
+	并把边框和内边距放入框中。*/
+	*{	
+		box-sizing:border-box;	
+	}
+	
+	/*margin 简写属性在一个声明中设置所有外边距属性。该属性可以有 1 到 4 个值。*/
+	body{
+		background:#eee;
+		margin:20px 0;
+	}
+	
+	/*min-height 属性设置元素的最小高度。*/
+	/*overflow 属性规定当内容溢出元素框时发生的事情。*/
+	/*auto	如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。*/
+	/*padding 简写属性在一个声明中设置所有内边距属性。*/
+	article{
+		width:21cm;
+		min-height:29.7cm;
+		background:white;
+		margin:0 auto;
+		overflow: auto;
+		padding: 1em;
+	}
+</style>
+<style media="print">
+	<body>{
+		margin:0;
+	}
+</style>
+<style>
+	body{
+		
+	}
+	article{
+		padding-top:30px;
+	}
+	p{
+		margin:.3em 0;
+	}
+	h1{
+		font-size:25px;
+		margin-top:0;
+	}
+	.bio{
+		position:relative;
+	}
+	/*position 属性规定元素的定位类型。*/
+	/*absolute	生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。
+	元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。*/
+	.bio img{
+		position:absolute;
+		top:0;
+		right:0;
+	}
+</style>
+</head>
+<body>
+
+	<!--<header>
+		<div>
+			<div>
+				<nav>
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="about.html">关于我</a></li>
+						<li><a href="portfolio.html">作品集</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>  -->
+
+	<article>
+		<section class="bio">
+			<h1>陈勇</h1>
+			<img src="./images/2020-06-05_154838.png" alt="" width="100" height="100">
+			<p>
+				男	|	38岁	|	电气自动化	|	上海
+			</p>
+			<p>
+				手机：13564437266	|	微信：wxid_i7d0imwapuq521	|	邮箱：leo7266@126.com
+			</p>
+		</section>
+		
+		<section>
+			<h2>工作经历</h2>
+			<ol>
+				<li>
+					<header>
+						<h3>上海斯凯普斯信息技术有限公司</h3>
+						<h4>程序员</h4>
+						<span><time>2018年12月</time>-<time>2019年10月</time></span>
+					</header>
+					<ul>
+						<li>
+							负责企业管理软件的维护工作。
+						</li>
+					</ul>
+				</li>
+				<li>
+					<header>
+						<h3>上海朗通科技有限公司</h3>
+						<h4>电气技术员</h4>
+						<span><time>2016年12月</time>-<time>2018年09月</time></span>
+					</header>
+					<ul>
+						<li>
+							负责停车场智能识别设备的安装调试。
+						</li>
+						<li>
+							负责日常设备维护，检查。
+						</li>
+					</ul>
+				</li>
+				<li>
+					<header>
+						<h3>新柯隆真空设备制造有限公司</h3>
+						<h4>电气技术员</h4>
+						<span><time>2015年06月</time>-<time>2016年10月</time></span>
+					</header>
+					<ul>
+						<li>
+							负责机电设备的安装，设备调试(380v)。
+						</li>
+						<li>
+							负责电控柜的安装，接线，桥架搭建。
+						</li>
+						<li>
+							负责客户现场的安装调试。
+						</li>
+					</ul>
+				</li>
+			</ol>
+		</section>
+		
+		
+		
+		<section>
+			<h2>技能</h2>
+			<div></div>
+			<ul>
+				<li>使用博图V14 SP1硬件组态，编写功能块，组织块（LAD）HMI设置</li>
+				<li>维修电工4级</li>
+				<li>全国计算机等级2级</li>
+				<li>熟练使用Eplan P8 2.1 制作段子图标，设备连接图</li>
+			</ul>
+		</section>
+		
+		<section>
+			<h2>作品集</h2>
+			<div></div>
+			<ul>
+				<li><img src=""/>作品1</li>
+				<li><img src=""/>作品2</li>
+				<li>作品3</li>
+				<li>作品4</li>
+			</ul>
+		</section>
+		
+		<section class="edu">
+			<h2>教育经历</h2>
+			<p>
+				<span><time>2007年03月</time>-<time>2010年03月</time></span>
+				上海交通大学成人教育学院	通信工程	本科
+			</p>
+			<p>
+				<span><time>2002年09月</time>-<time>2005年07月</time></span>
+				第二工业大学	电气技术	 大专
+			</p>
+			<p>
+				<span><time>1998年09月</time>-<time>2002年07月</time></span>
+				第二工业大学（中专部）	 电气技术 	中专
+			</p>
+		</section>
+		
+		<section>
+			<h2>其他链接</h2>
+			<ul>
+				<li><a href="#"></a> </li>
+				<li><a href="#"></a> </li>
+			</ul>
+		</section>
+		
+	</article>
+	
+	<!--<footer>
+		<div>
+			<div >
+				<p>
+					Copyright &copy;
+					<script>
+						document.write(new Date().getFullYear());
+					</script> 
+					All rights reserved | This template is made with <i></i> by <a href="#https://colorlib.com" target="_blank">Leo</a>				</p>
+			</div>
+		</div>
+	</footer>-->
+	
+	<script src="./main.js"></script>
+</body>
+</html>
