@@ -1,272 +1,123 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="zh">
-<head>
-<meta charset="UTF-8">
-<title>个人主页</title>
-<style>
-	/*box-sizing 属性允许您以特定的方式定义匹配某个区域的特定元素。
-	例如，假如您需要并排放置两个带边框的框，可通过将 box-sizing 
-	设置为 "border-box"。这可令浏览器呈现出带有指定宽度和高度的框，
-	并把边框和内边距放入框中。*/
-	*{	
-		box-sizing:border-box;	
-	}
 	
-	/*margin 简写属性在一个声明中设置所有外边距属性。该属性可以有 1 到 4 个值。*/
-	body{
-		background:#eee;
-		margin:20px 0;
-	}
-	
-	/*min-height 属性设置元素的最小高度。*/
-	/*overflow 属性规定当内容溢出元素框时发生的事情。*/
-	/*auto	如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。*/
-	/*padding 简写属性在一个声明中设置所有内边距属性。*/
-	article{
-		width:21cm;
-		min-height:29.7cm;
-		background:white;
-		margin:0 auto;
-		overflow: auto;
-		padding: 1em;
-	}
-</style>
-<style media="print">
-	<body>{
-		margin:0;
-	}
-</style>
-<style>
-	body{
-		
-	}
-	
-	article{
-		padding-top:30px;
-	}
-	
-	p{
-		margin:.3em 0;
-	}
-	
-	h1{
-		font-size:25px;
-		margin-top:0;
-	}
-	
-	h4,h5,h6{
-		font-weight:nomal;
-	}
-	
-	ol,ul{
-		list-style:none;
-	}
-	
-	.bio{
-		position:relative;
-	}
-	/*position 属性规定元素的定位类型。*/
-	/*absolute	生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。
-	元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。*/
-	.bio img{
-		position:absolute;
-		top:0;
-		right:0;
-	}
-</style>
-</head>
-<body>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="One Page Personal HTML Template">
 
-	<!--<header>
-		<div>
-			<div>
-				<nav>
-					<ul>
-						<li><a href="index.html">首页</a></li>
-						<li><a href="about.html">关于我</a></li>
-						<li><a href="portfolio.html">作品集</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</header>  -->
+		<title>test</title>
 
-	<article>
-		<section class="bio">
-			<h1>陈勇</h1>
-			<img src="./images/2020-06-05_154838.png" alt="" width="100" height="100">
-			<p>
-				男	|	38岁	|	电气自动化	|	上海
-			</p>
-			<p>
-				手机：13564437266	|	微信：wxid_i7d0imwapuq521	|	邮箱：leo7266@126.com
-			</p>
-		</section>
-		
-		<style>
-			.jobs{
-				
-			}
-			
-			.jobs>h2{
-			
-			}
-			
-			.jobs>ol{
-			
-			}
-			
-			.jobs>ol>li{
-				margin:12px 0;
-			}
-			
-			/*设置或检索对象是否显示及如何显示。*/
-			/*将对象作为弹性伸缩盒显示。*/
-			.jobs header{
-				display:flex;
-				color:#666;
-			}
-			
-			.jobs header>h3{
-				font-size:18px;
-				color:#333;
-			}
-			
-			.jobs header>h4{
-				margin:auto;
-				font-size:18px;
-			}
-			
-			.jobs header>span{
-				font-size:18px;
-				margin:auto;
-			}
-			
-			.jobs p{
-				color:#666;
-			}
-		</style>
-		
-		<section class="jobs">
-			<h2>工作经历</h2>
-			<ol>
-				<li>
-					<header>
-						<h3>上海斯凯普斯信息技术有限公司</h3>
-						<h4>程序员</h4>
-						<span><time>2018年12月</time>-<time>2019年10月</time></span>
-					</header>
-					<ul>
-						<li>
-							<p>负责企业管理软件的维护工作。</p>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<header>
-						<h3>上海朗通科技有限公司</h3>
-						<h4>电气技术员</h4>
-						<span><time>2016年12月</time>-<time>2018年09月</time></span>
-					</header>
-					<ul>
-						<li>
-							<p>负责停车场智能识别设备的安装调试。</p>
-						</li>
-						<li>
-							<p>负责日常设备维护，检查。</p>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<header>
-						<h3>新柯隆真空设备制造有限公司</h3>
-						<h4>电气技术员</h4>
-						<span><time>2015年06月</time>-<time>2016年10月</time></span>
-					</header>
-					<ul>
-						<li>
-							<p>负责机电设备的安装，设备调试(380v)。</p>
-						</li>
-						<li>
-							<p>负责电控柜的安装，接线，桥架搭建。</p>
-						</li>
-						<li>
-							<p>负责客户现场的安装调试。</p>
-						</li>
-					</ul>
-				</li>
-			</ol>
-		</section>
-		
-		
-		
-		<section>
-			<h2>技能</h2>
-			<div></div>
-			<ul>
-				<li>使用博图V14 SP1硬件组态，编写功能块，组织块（LAD）HMI设置</li>
-				<li>维修电工4级</li>
-				<li>全国计算机等级2级</li>
-				<li>熟练使用Eplan P8 2.1 制作段子图标，设备连接图</li>
-			</ul>
-		</section>
-		
-		<section>
-			<h2>作品集</h2>
-			<div></div>
-			<ul>
-				<li><img src=""/>作品1</li>
-				<li><img src=""/>作品2</li>
-				<li>作品3</li>
-				<li>作品4</li>
-			</ul>
-		</section>
-		
-		<section class="edu">
-			<h2>教育经历</h2>
-			<p>
-				<span><time>2007年03月</time>-<time>2010年03月</time></span>&nbsp;|&nbsp;
-				<span>上海交通大学成人教育学院</span>&nbsp;|&nbsp;
-				<span>通信工程</span>&nbsp;|&nbsp;
-				<span>本科</span>
-			</p>
-			<p>
-				<span><time>2002年09月</time>-<time>2005年07月</time></span>&nbsp;|&nbsp;
-				<span>第二工业大学</span>&nbsp;|&nbsp;	
-				<span>电气技术</span>&nbsp;|&nbsp;	 
-				<span>大专</span>
-			</p>
-			<p>
-				<span><time>1998年09月</time>-<time>2002年07月</time></span>&nbsp;|&nbsp;
-				<span>第二工业大学(中专部)</span>&nbsp;|&nbsp;	 	
-				<span>电气技术</span> 电气技术 &nbsp;|&nbsp;
-				<span>中专</span>	
-			</p>
-		</section>
-		
-		<section>
-			<h2>其他链接</h2>
-			<ul>
-				<li><a href="#"></a> </li>
-				<li><a href="#"></a> </li>
-			</ul>
-		</section>
-		
-	</article>
-	
-	<!--<footer>
-		<div>
-			<div >
-				<p>
-					Copyright &copy;
-					<script>
-						document.write(new Date().getFullYear());
-					</script> 
-					All rights reserved | This template is made with <i></i> by <a href="#https://colorlib.com" target="_blank">Leo</a>				</p>
-			</div>
+		<!-- Favicon -->
+		<link href="assets/img/favicon.ico" rel="icon" type="image/x-icon">			
+
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+		<!-- Bootstrap fullscreen modal -->
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-modal-carousel.css">
+
+		<!-- Animated text css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/animated-text.css">
+
+		<!-- Custom css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+
+		<!-- Owl Carousel css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/owl.transitions.css">
+
+
+		<!-- Animate css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+		<!-- Themify icon -->
+		<link href="assets/themify-icons/themify-icons.css" rel="stylesheet" type="text/css">			
+
+		<!-- Google fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,600italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500' rel='stylesheet' type='text/css'>
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+	        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+
+	</head>
+
+	<body id="page-top" class="index">
+
+		<!-- Header -->
+		<header class="header-img">
+			<div class="header-overlay"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-left">
+							<h1>Hi, I'm Simon</h1>
+							<h2 class="cd-headline clip is-full-width">
+								<span class="cd-words-wrapper">
+									<b class="is-visible">Professional Graphic Designer</b>
+									<b>Fun loving &amp; coffee freak!</b>
+									<b>Photography is my passion</b>
+								</span>
+							</h2>
+							<a href="#about" class="page-scroll btn custom-btn-3">LEARN MORE</a>
+						</div>
+					</div>
+				</div>
+		</header>
+		<!-- END: Header -->
+
+		<!-- Navigation -->
+		<div id="navigation">
+			<nav class="navbar navbar-default navbar-static-top" id="nav">
+		        <div class="container">
+		          <div class="navbar-header page-scroll">
+		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		              <span class="sr-only">Toggle navigation</span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		            </button>
+		            <!-- Brand -->
+		            <a class="navbar-brand page-scroll" href="#page-top"><img src="assets/img/logo.png" alt=""></a>
+		            <!-- End Brand -->
+		          </div>
+		          <div class="collapse navbar-collapse">
+		            <ul class="nav navbar-nav navbar-right">
+		              	<li>
+		                	<a class="page-scroll" href="#about">About</a>
+		              	</li>
+		              	<li>
+		                	<a class="page-scroll" href="#skills">Skills</a>
+		              	</li>		                  			              
+		            </ul>
+		          </div>
+		        </div>
+		    </nav>
 		</div>
-	</footer>-->
+		<!-- END: Navigation -->															
+
+		<!-- javascript plugins -->
+		<script src="assets/js/jquery-1.11.1.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/jquery.easing.1.3.min.js"></script>
+		<script src="assets/js/appear.js"></script>
+		<script src="assets/js/bootstrap-progressbar.min.js"></script>
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<script src="assets/js/jquery.mixitup.min.js"></script>
+		<script src="assets/js/waypoints.min.js"></script>
+		<script src="assets/js/jquery.counterup.min.js"></script>
+		<script src="assets/js/animated-jquery.js"></script>
+		<script src="assets/js/wow.min.js"></script>
+
+
+		<!-- custom js -->
+		<script src="assets/js/custom.js"></script>		
+
+	</body>
 	
-	<script src="./main.js"></script>
-</body>
-</html>
+</html>			
